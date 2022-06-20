@@ -1,0 +1,88 @@
+body {
+    font-family: "Lato", Arial;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-gray;
+    
+}
+
+.heading-primary {
+    color:$color-white;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 40px;
+
+    
+
+    &--main {
+        display: block;
+        font-size: 6rem;
+        font-weight: 700;
+        letter-spacing: 3.5rem;
+        animation-name: moveInleft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        /* animation-delay: 1s; */
+
+        @include respond(phone) {
+            letter-spacing: 1rem;
+            font-family: 5rem;
+        }
+    }
+
+    &--sub {
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.74rem;
+        animation: moveInRight 1s ease-out;
+        /* animation-delay: 1s; */
+
+         @include respond(phone) {
+             letter-spacing: .5rem;
+             font-family: 5rem;
+         }
+    }
+}
+
+.heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    -webkit-background-clip: text;
+     color: transparent;
+     transition: all .2s;
+
+     &:hover {
+         transform: skewY(2deg) skewX(15deg) scale(1.1);
+         text-shadow: .5rem 1rem 2rem rgba($color-black,.2);
+     }
+
+      @include respond(tab-port) {
+          font-size: 3rem;
+      }
+
+      @include respond(phone) {
+          font-size: 2.5rem;
+      }
+
+}
+
+.heading-tertaiary{
+    text-transform: uppercase;
+    color: $color-gray;
+    font-size: $font-size-default;
+    font-weight: 700;
+}
+.paragraph {
+    font-size: $font-size-default;
+    color: $color-gray;
+
+    &:not(:last-child){
+        margin-bottom: 3rem;
+    }
+}
+
