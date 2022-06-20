@@ -6,7 +6,7 @@ Thanks to watching this for checking out this front-end samples Web and Mobile d
 
 ### View online
 
-[https://yanniro2.github.io/RememberThat]
+[https://yanniro2.github.io/Natours]
 
 ## Available Scripts
 
